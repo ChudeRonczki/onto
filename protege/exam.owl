@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:base="http://www.owl-ontologies.com/is/sim/base.owl#"
+    xmlns="http://www.owl-ontologies.com/is/sim/exam.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/is/sim/exam.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.owl-ontologies.com/is/sim/base.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Technic">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/is/sim/base.owl#Person"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Exam"/>
+  <owl:ObjectProperty rdf:ID="hasPatient">
+    <rdfs:domain rdf:resource="#Exam"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/is/sim/base.owl#Patient"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasTechnic">
+    <rdfs:range rdf:resource="#Technic"/>
+    <rdfs:domain rdf:resource="#Exam"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="data">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Exam"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="timestamp">
+    <rdfs:domain rdf:resource="#Exam"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="id_number">
+    <rdfs:domain rdf:resource="#Technic"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.5, Build 663)  http://protege.stanford.edu -->
