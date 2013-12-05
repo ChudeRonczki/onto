@@ -1,0 +1,63 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:base="http://www.owl-ontologies.com/is/sim/base.owl#"
+    xmlns="http://www.owl-ontologies.com/is/sim/exam.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/is/sim/exam.owl#data">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/is/sim/exam.owl#Exam"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/is/sim/exam.owl#64">
+    <id_number rdf:datatype="http://www.w3.org/2001/XMLSchema#long">64</id_number>
+    <base:phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">427657676</base:phone_number>
+    <base:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dwqdw@wefwe</base:email>
+    <base:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bbggg</base:surname>
+    <base:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aa</base:first_name>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/is/sim/exam.owl#Technic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/is/sim/exam.owl#Technic">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/is/sim/base.owl#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/is/sim/exam.owl#Exam">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <data>PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEgVHJhbnNpdGlvbmFsLy9FTiI+CjwhLS0vKgogKiBETyBOT1QgQUxURVIgT1IgUkVNT1ZFIENPUFlSSUdIVCBOT1RJQ0VTIE9SIFRISVMgSEVBREVSLgogKgogKiBDb3B5cmlnaHQgMTk5Ny0yMDEyIE9yYWNsZSBhbmQvb3IgaXRzIGFmZmlsaWF0ZXMuIEFsbCByaWdodHMgcmVzZXJ2ZWQuCiAqCiAqIE9yYWNsZSBhbmQgSmF2YSBhcmUgcmVnaXN0ZXJlZCB0cmFkZW1hcmtzIG9mIE9yYWNsZSBhbmQvb3IgaXRzIGFmZmlsaWF0ZXMuCiAqIE90aGVyIG5hbWVzIG1heSBiZSB0cmFkZW1hcmtzIG9mIHRoZWlyIHJlc3BlY3RpdmUgb3duZXJzLgogKgogKiBUaGUgY29udGVudHMgb2YgdGhpcyBmaWxlIGFyZSBzdWJqZWN0IHRvIHRoZSB0ZXJtcyBvZiBlaXRoZXIgdGhlIEdOVQogKiBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIFZlcnNpb24gMiBvbmx5ICgiR1BMIikgb3IgdGhlIENvbW1vbgogKiBEZXZlbG9wbWVudCBhbmQgRGlzdHJpYnV0aW9uIExpY2Vuc2UoIkNEREwiKSAoY29sbGVjdGl2ZWx5LCB0aGUKICogIkxpY2Vuc2UiKS4gWW91IG1heSBub3QgdXNlIHRoaXMgZmlsZSBleGNlcHQgaW4gY29tcGxpYW5jZSB3aXRoIHRoZQogKiBMaWNlbnNlLiBZb3UgY2FuIG9idGFpbiBhIGNvcHkgb2YgdGhlIExpY2Vuc2UgYXQKICogaHR0cDovL3d3dy5uZXRiZWFucy5vcmcvY2RkbC1ncGx2Mi5odG1sCiAqIG9yIG5iYnVpbGQvbGljZW5zZXMvQ0RETC1HUEwtMi1DUC4gU2VlIHRoZSBMaWNlbnNlIGZvciB0aGUKICogc3BlY2lmaWMgbGFuZ3VhZ2UgZ292ZXJuaW5nIHBlcm1pc3Npb25zIGFuZCBsaW1pdGF0aW9ucyB1bmRlciB0aGUKICogTGljZW5zZS4gIFdoZW4gZGlzdHJpYnV0aW5nIHRoZSBzb2Z0d2FyZSwgaW5jbHVkZSB0aGlzIExpY2Vuc2UgSGVhZGVyCiAqIE5vdGljZSBpbiBlYWNoIGZpbGUgYW5kIGluY2x1ZGUgdGhlIExpY2Vuc2UgZmlsZSBhdAogKiBuYmJ1aWxkL2xpY2Vuc2VzL0NEREwtR1BMLTItQ1AuICBPcmFjbGUgZGVzaWduYXRlcyB0aGlzCiAqIHBhcnRpY3VsYXIgZmlsZSBhcyBzdWJqZWN0IHRvIHRoZSAiQ2xhc3NwYXRoIiBleGNlcHRpb24gYXMgcHJvdmlkZWQKICogYnkgT3JhY2xlIGluIHRoZSBHUEwgVmVyc2lvbiAyIHNlY3Rpb24gb2YgdGhlIExpY2Vuc2UgZmlsZSB0aGF0CiAqIGFjY29tcGFuaWVkIHRoaXMgY29kZS4gSWYgYXBwbGljYWJsZSwgYWRkIHRoZSBmb2xsb3dpbmcgYmVsb3cgdGhlCiAqIExpY2Vuc2UgSGVhZGVyLCB3aXRoIHRoZSBmaWVsZHMgZW5jbG9zZWQgYnkgYnJhY2tldHMgW10gcmVwbGFjZWQgYnkKICogeW91ciBvd24gaWRlbnRpZnlpbmcgaW5mb3JtYXRpb246CiAqICJQb3J0aW9ucyBDb3B5cmlnaHRlZCBbeWVhcl0gW25hbWUgb2YgY29weXJpZ2h0IG93bmVyXSIKICoKICogQ29udHJpYnV0b3Iocyk6ZGV2ZWxvcGVycy9zcGwuaHRtbC4KICoKICogVGhlIE9yaWdpbmFsIFNvZnR3YXJlIGlzIE5ldEJlYW5zLiBUaGUgSW5pdGlhbCBEZXZlbG9wZXIgb2YgdGhlIE9yaWdpbmFsCiAqIFNvZnR3YXJlIGlzIFN1biBNaWNyb3N5c3RlbXMsIEluYy4gUG9ydGlvbnMgQ29weXJpZ2h0IDE5OTctMjAwOCBTdW4KICogTWljcm9zeXN0ZW1zLCBJbmMuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuCiAqCiAqIElmIHlvdSB3aXNoIHlvdXIgdmVyc2lvbiBvZiB0aGlzIGZpbGUgdG8gYmUgZ292ZXJuZWQgYnkgb25seSB0aGUgQ0RETAogKiBvciBvbmx5IHRoZSBHUEwgVmVyc2lvbiAyLCBpbmRpY2F0ZSB5b3VyIGRlY2lzaW9uIGJ5IGFkZGluZwogKiAiW0NvbnRyaWJ1dG9yXSBlbGVjdHMgdG8gaW5jbHVkZSB0aGlzIHNvZnR3YXJlIGluIHRoaXMgZGlzdHJpYnV0aW9uCiAqIHVuZGVyIHRoZSBbQ0RETCBvciBHUEwgVmVyc2lvbiAyXSBsaWNlbnNlLiIgSWYgeW91IGRvIG5vdCBpbmRpY2F0ZSBhCiAqIHNpbmdsZSBjaG9pY2Ugb2YgbGljZW5zZSwgYSByZWNpcGllbnQgaGFzIHRoZSBvcHRpb24gdG8gZGlzdHJpYnV0ZQogKiB5b3VyIHZlcnNpb24gb2YgdGhpcyBmaWxlIHVuZGVyIGVpdGhlciB0aGUgQ0RETCwgdGhlIEdQTCBWZXJzaW9uIDIgb3IKICogdG8gZXh0ZW5kIHRoZSBjaG9pY2Ugb2YgbGljZW5zZSB0byBpdHMgbGljZW5zZWVzIGFzIHByb3ZpZGVkIGFib3ZlLgogKiBIb3dldmVyLCBpZiB5b3UgYWRkIEdQTCBWZXJzaW9uIDIgY29kZSBhbmQgdGhlcmVmb3JlLCBlbGVjdGVkIHRoZSBHUEwKICogVmVyc2lvbiAyIGxpY2Vuc2UsIHRoZW4gdGhlIG9wdGlvbiBhcHBsaWVzIG9ubHkgaWYgdGhlIG5ldyBjb2RlIGlzCiAqIG1hZGUgc3ViamVjdCB0byBzdWNoIG9wdGlvbiBieSB0aGUgY29weXJpZ2h0IGhvbGRlci4KICovLS0+CjxodG1sPgo8aGVhZD4KICAgPHRpdGxlPk5ldEJlYW5zIElERSAtIFJFQURNRTwvdGl0bGU+CiAgIDxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PWlzby04ODU5LTEiPgogICA8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSJuZXRiZWFucy5jc3MiPgo8L2hlYWQ+Cgo8Ym9keT4KPGgxPlJFQURNRTwvaDE+CjxoMj5OZXRCZWFuczxzdXAgY2xhc3M9InRtdGV4dCI+VE08L3N1cD4gSURFPC9oMj4KPHA+TmV0QmVhbnMgSURFIGlzIGFuIGludGVncmF0ZWQgZGV2ZWxvcG1lbnQgZW52aXJvbm1lbnQgKElERSkgZm9yIHdyaXRpbmcsCmNvbXBpbGluZywgdGVzdGluZywgYW5kIGRlYnVnZ2luZyBzb2Z0d2FyZSBhcHBsaWNhdGlvbnMgZm9yCnRoZSBKYXZhPHN1cD5UTTwvc3VwPiBwbGF0Zm9ybSBhbmQgb3RoZXIgZW52aXJvbm1lbnRzLiAKTmV0QmVhbnMgSURFIGluY2x1ZGVzIGEgZnVsbC1mZWF0dXJlZCB0ZXh0IGVkaXRvciwgdmlzdWFsIGRlc2lnbiB0b29scywgCnNvdXJjZSBjb2RlIG1hbmFnZW1lbnQgc3VwcG9ydCwgZGF0YWJhc2UgaW50ZWdyYXRpb24gdG9vbHMsIGFuZCBtYW55IG90aGVyIGZlYXR1cmVzLjwvcD4KCjxoMz5UbyBzdGFydCB0aGUgSURFIChNaWNyb3NvZnQgV2luZG93cykgdXNlIG9uZSBvZiB0aGVzZSBtZXRob2RzOjwvaDM+Cjx1bD4KICA8bGk+RG91YmxlLWNsaWNrIHRoZSBOZXRCZWFucyBJREUgaWNvbiBvbiB5b3VyIGRlc2t0b3AuPC9saT4KICA8bGk+Q2hvb3NlIFN0YXJ0ICZndDsgQWxsIFByb2dyYW1zICZndDsgTmV0QmVhbnMgJmd0OyBOZXRCZWFucyBJREUuPC9saT4KICA8bGk+U3RhcnQgdGhlIElERSBhdCB0aGUgY29tbWFuZCBsaW5lIDxjb2RlPkM6XCZndDsgPC9jb2RlPjxpPjx2YXI+bmV0YmVhbnMtaW5zdGFsbC1kaXJlY3Rvcnk8L3Zhcj48L2k+PGNvZGU+XGJpblxuZXRiZWFucy5leGU8L2NvZGU+LjwvbGk+CjwvdWw+CjxoMz5UbyBzdGFydCB0aGUgSURFIChTb2xhcmlzIE9TIG9yIExpbnV4KTo8L2gzPgo8dWw+CiAgPGxpPiBUeXBlIGF0IHRoZSBjb21tYW5kIHByb21wdDogPGk+IDxjb2RlPi88L2NvZGU+bmV0YmVhbnMtaW5zdGFsbC1kaXJlY3Rvcnk8L2k+PGNvZGU+L2Jpbi9uZXRiZWFuczwvY29kZT48L2xpPgo8L3VsPgo8aDM+VG8gc3RvcCB0aGUgSURFOjwvaDM+Cjx1bD4KICA8bGk+IEZyb20gdGhlIElERSwgY2hvb3NlIEZpbGUgJmd0OyBFeGl0LjwvbGk+CjwvdWw+CjxoMz5UbyB1bmluc3RhbGwgdGhlIElERSAoTWljcm9zb2Z0IFdpbmRvd3MpPC9oMz4KPHVsPgogIDxsaT5Vc2UgdGhlIEFkZC9SZW1vdmUgUHJvZ3JhbXMgdXRpbGl0eS4gRG8gbm90IG1hbnVhbGx5IGRlbGV0ZSB0aGUgZGlyZWN0b3JpZXMgCiAgICBhbmQgZmlsZXMuPC9saT4KPC91bD4KPGgzPlRvIHVuaW5zdGFsbCB0aGUgSURFIChTb2xhcmlzIE9TIG9yIExpbnV4KTwvaDM+CjxwPlVzZSB0aGUgcHJvdmlkZWQgdW5pbnN0YWxsZXIgZm91bmQgYXQgPGNvZGU+LzwvY29kZT48dmFyPm5ldGJlYW5zLWluc3RhbGwtZGlyZWN0b3J5PC92YXI+PGNvZGU+L3VuaW5zdGFsbC5zaDwvY29kZT4uIAogIERvIG5vdCBtYW51YWxseSBkZWxldGUgdGhlIGRpcmVjdG9yaWVzIGFuZCBmaWxlcy4gPC9wPgoKPGgzPlRvIHVuaW5zdGFsbCB0aGUgSURFIChNYWMgT1MgWCk8L2gzPgo8dWw+CiAgPGxpPkRyYWcgdGhlIHByb2dyYW0gZm9sZGVycyBvciBmaWxlcyB0byB0aGUgVHJhc2guIE5vdGUgdGhhdCB0aGUgZGVmYXVsdCBsb2NhdGlvbiBmb3IgdGhlIElERSBpcyA8dHQ+L0FwcGxpY2F0aW9ucy9OZXRCZWFucy88L3R0Pi48L2xpPgo8L3VsPgoKPGgzPkZpbmRpbmcgRG9jdW1lbnRhdGlvbiBmb3IgTmV0QmVhbnMgSURFPC9oMz4KCjx1bD4KPGxpPlJlbGVhc2UgaW5mb3JtYXRpb24gb24gTmV0QmVhbnMgSURFIGNhbiBiZSBmb3VuZCBhdCA8YQpocmVmPSJodHRwOi8vbmV0YmVhbnMub3JnL2NvbW11bml0eS9yZWxlYXNlcy9pbmRleC5odG1sIj5odHRwOi8vbmV0YmVhbnMub3JnL2NvbW11bml0eS9yZWxlYXNlcy9pbmRleC5odG1sPC9hPi48L2xpPgoKPGxpPlRoZSBpbmRleCBvZiBJREUgZG9jdW1lbnRhdGlvbiBjYW4gYmUgZm91bmQgYXQgPGEKaHJlZj0iaHR0cDovL3d3dy5uZXRiZWFucy5vcmcva2IvaW5kZXguaHRtbCI+aHR0cDovL3d3dy5uZXRiZWFucy5vcmcva2IvaW5kZXguaHRtbDwvYT4uIApUaGlzIGRvY3VtZW50IGFsc28gcHJvdmlkZXMgbGlua3MgdG8gZnVydGhlciBkb2N1bWVudGF0aW9uLjwvbGk+ICAKCjxsaT5IZWxwIGRvY3VtZW50YXRpb24gaXMgYXZhaWxhYmxlIHdpdGhpbiB0aGUgSURFLiBGcm9tIHRoZSBtYWluIG1lbnUsIGNob29zZSBIZWxwID4gSGVscCBDb250ZW50cy4gClRoZSBIZWxwIG1lbnUgYWxzbyBwcm92aWRlcyBsaW5rcyB0byBvdGhlciB1c2VmdWwgZG9jdW1lbnRzLjwvbGk+IAoKPC91bD4KCgo8aDM+TmV0QmVhbnMgSURFIHVzZXIgZGlyZWN0b3J5PC9oMz4KPHA+QSBkZWZhdWx0IHVzZXIgZGlyZWN0b3J5IGlzIGNyZWF0ZWQgdGhlIGZpcnN0IHRpbWUgeW91IHN0YXJ0IHRoZSBJREUuIEl0IGlzIAogIHVzZWQgdG8gc3RvcmUgeW91ciB1c2VyIHNldHRpbmdzLCBvcHRpb25zIGFuZCBydW50aW1lIGRhdGEgZm9yIHBlcnNvbmFsIGRldmVsb3BtZW50IAogIHNlcnZlcnMuIE9uIE1pY3Jvc29mdCBXaW5kb3dzIFZpc3RhIHN5c3RlbXMsIHRoaXMgZGlyZWN0b3J5IGlzIGdlbmVyYWxseSBmb3VuZCBhdCA8Y29kZT5DOlxVc2Vyc1w8L2NvZGU+PGk+dXNlci1pZDwvaT48Y29kZT5cLm5ldGJlYW5zXDwvY29kZT48aT52ZXJzaW9uPC9pPi4gCiAgT24gb3RoZXIgTWljcm9zb2Z0IAogIFdpbmRvd3Mgc3lzdGVtcywgdGhpcyBkaXJlY3RvcnkgaXMgZ2VuZXJhbGx5IGZvdW5kIGF0IDxjb2RlPkM6XERvY3VtZW50cyAKICBhbmQgU2V0dGluZ3NcPC9jb2RlPjxpPnVzZXItaWQ8L2k+PGNvZGU+XC5uZXRiZWFuc1w8L2NvZGU+PGk+dmVyc2lvbjwvaT4uIAogIE9uIFNvbGFyaXMgYW5kIExpbnV4LCB0aGlzIGRpcmVjdG9yeSBpcyBmb3VuZCBhdAovPGk+PHZhcj4kSE9NRTwvdmFyPjwvaT48Y29kZT4vbmV0YmVhbnNfdXNlcjwvY29kZT48L3A+CjwvYm9keT4KPC9odG1sPgo=</data>
+    <timestamp>2013-12-05T22:29:23</timestamp>
+    <hasPatient rdf:resource="http://www.owl-ontologies.com/is/sim/base.owl#2132132"/>
+    <hasTechnic rdf:resource="http://www.owl-ontologies.com/is/sim/exam.owl#64"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/is/sim/exam.owl#Exam"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/is/sim/exam.owl#timestamp">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/is/sim/exam.owl#Exam"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/is/sim/exam.owl#hasPatient">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/is/sim/base.owl#Patient"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/is/sim/exam.owl#Exam"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/is/sim/exam.owl">
+    <owl:imports rdf:resource="http://www.owl-ontologies.com/is/sim/base.owl"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/is/sim/exam.owl#id_number">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/is/sim/exam.owl#Technic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/is/sim/exam.owl#hasTechnic">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/is/sim/exam.owl#Exam"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/is/sim/exam.owl#Technic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>
