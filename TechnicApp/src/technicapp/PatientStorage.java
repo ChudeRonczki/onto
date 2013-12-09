@@ -75,6 +75,8 @@ public class PatientStorage {
     // Funkcja wczytuje aktualną bazę pacjentów z ontologii
     public ArrayList<PatientData> GetPatientsList()
     {
+        long measureStart = System.nanoTime();
+        
         ArrayList<PatientData> patientsList = new ArrayList<>();
         for (Iterator<Individual> i = ontModel.listIndividuals(patientClass); i.hasNext(); )
         {
@@ -87,12 +89,17 @@ public class PatientStorage {
             patientData.peselNumber = patient.getProperty(peselNumberProp).getString();
             patientsList.add(patientData);
         }
+        
+        System.out.println("Wczytano pacjentów w czasie " + (System.nanoTime() - measureStart) + " ns.");
+        
         return patientsList;
     }
     
     // Funkcja dodaje nowego pacjenta do ontologii na podstawie paczki z danymi
     public void AddPatient(PatientData newPatient)
     {
+        long measureStart = System.nanoTime();
+        
         Individual ontPatient =
                 ontModel.createIndividual(NS + newPatient.peselNumber, patientClass);
         ontPatient.addLiteral(firstNameProp, newPatient.firstName);
@@ -100,5 +107,7 @@ public class PatientStorage {
         ontPatient.addLiteral(emailProp, newPatient.email);
         ontPatient.addLiteral(phoneNumberProp, newPatient.phoneNumber);
         ontPatient.addLiteral(peselNumberProp, newPatient.peselNumber);
+        
+        System.out.println("Dodano pacjenta w czasie " + (System.nanoTime() - measureStart) + " ns.");
     }
 }

@@ -28,6 +28,8 @@ public class ExamOntologyGenerator {
     public static OntModel GenerateExamOntology(PatientData selPatient,
             TechnicData techData, File examFile)
     {
+        long measureStart = System.nanoTime();
+        
         // Wczytujemy pustą ontologię badania
         OntModel examModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM);
         examModel.read("res/exam.owl");
@@ -56,6 +58,8 @@ public class ExamOntologyGenerator {
         exam.addProperty(examModel.getDatatypeProperty(NS + "timestamp"),
                 new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date()));
         
+        long measureStart2 = System.nanoTime();
+        
         // Wczytujemy bajtową zawartość pliku, kodujemy ją za pomocą base64 i dodajemy do badania
         try {
             byte[] bytes = Files.readAllBytes(examFile.toPath());
@@ -63,6 +67,9 @@ public class ExamOntologyGenerator {
         } catch (IOException ex) {
             Logger.getLogger(ExamOntologyGenerator.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        System.out.println("Dodano plik binarny w czasie " + (System.nanoTime() - measureStart2) + " ns.");
+        System.out.println("Wygenerowano ontologię w czasie " + (System.nanoTime() - measureStart) + " ns.");
         
         return examModel;
     }
